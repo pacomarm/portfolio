@@ -1,21 +1,26 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
-import { getProjects } from '../actions/projects';
+// import { useDispatch } from 'react-redux'
+// import { getProjects } from '../actions/projects';
 
 
 export const LandingPage = () => {
     
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     
-    const handleClick = () => {
-        dispatch( getProjects() )
-    }
+    // const handleClick = () => {
+    //     dispatch( getProjects() )
+    // }
 
     return (
         <>
-            <div className="cards">
-                <h2 className="titles">My Portfolio</h2>
-                <button className="btn btn-primary" onClick={handleClick}>Hi</button>
+            <div className="name">
+                <span>FRANCISCO MARMOLEJO</span>
+            </div>
+            <div className="poss">
+                <div className="titlebox">
+                    <h2 className="titles">Software, Engineer; Designer: Human.</h2>
+                    <h2 className="titles2">Software, Engineer; Designer: Human-ish</h2>
+                </div>
             </div>
         </>
     )

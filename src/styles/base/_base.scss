@@ -1,12 +1,19 @@
 * {
-	font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-		sans-serif;
+	// font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+	// 	sans-serif;
+	font-family: ButlerUltraLight;
 	margin: 0px;
 }
 
+// @font-face {
+// 	font-family: Butt;
+// 	src: url(https://fontlibrary.org//face/butler);
+// 	font-weight: bolder;
+// }
+
 html,
 body {
-	background-color: $black;
+	background-color: $nblack;
 	height: 100vh;
 	width: 100vw;
 }
@@ -16,13 +23,63 @@ body {
 }
 
 .titles {
-	font-size: 64px;
-	line-height: 1.0625;
-	font-weight: 700;
-	letter-spacing: -0.009em;
-	font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-		sans-serif;
-	color: $black;
+	// font-size: 84px;
+	// line-height: 1.0625;
+	// font-weight: 700;
+	// letter-spacing: -0.009em;
+	// font-family: SF Pro Dispslay, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+	// 	sans-serif;
+	// font-family: ButlerUltralight;
+	font-family: ButlerUltraLight;
+	// font-style: normal;
+	// font-weight: normal;
+	color: $white;
+	font-size: 5.72917vw;
+	// font-weight: bolder;
+	line-height: 1.135;
+	text-align: center;
+	width: 100%;
+}
+
+.titles2 {
+	font-family: ButlerUltraLight;
+	color: $white;
+	font-size: 5.72917vw;
+	line-height: 1.135;
+	text-align: center;
+	width: 100%;
+	display: none;
+}
+
+.name {
+	color: $white;
+	font-size: 1.2vw;
+	line-height: 1;
+	max-width: 5.5vw;
+	padding: 9rem;
+	letter-spacing: 0.13em;
+}
+
+.poss {
+	position: absolute;
+	top: 40%;
+	width: 100vw;
+	text-align: center;
+}
+
+.titlebox {
+	max-width: 62.5vw;
+	margin: auto;
+	left: 50%;
+	&:hover {
+		.titles {
+			display: none;
+		}
+		.titles2 {
+			display: block;
+		}
+		transition: display 1.35s ease-in-out;
+	}
 }
 
 .cards {
