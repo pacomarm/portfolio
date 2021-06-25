@@ -1,16 +1,14 @@
 import React from 'react'
-// import { useDispatch } from 'react-redux'
-// import { getProjects } from '../actions/projects';
-
+import { useHistory } from 'react-router-dom'
 
 export const LandingPage = () => {
-    
-    // const dispatch = useDispatch();
-    
-    // const handleClick = () => {
-    //     dispatch( getProjects() )
-    // }
 
+    const history = useHistory();
+
+    const handleClick = (route) => {
+        history.push(route);
+    }
+    
     return (
         <>
             <div className="name">
@@ -22,9 +20,9 @@ export const LandingPage = () => {
                     <h2 className="titles2">Software, Engineer; Designer: Human-ish</h2>
                 </div>
                 <div className="rou">
-                    <button className="button"><span className="b1">Projects</span></button>
-                    <button className="button"><span className="b2">About</span></button>
-                    <button className="button"><span className="b3">Contact</span></button>
+                    <button className="button" onClick={() => handleClick('projects')}><span className="b1">Projects</span></button>
+                    <button className="button" onClick={() => handleClick('about')}><span className="b2">About</span></button>
+                    <button className="button" onClick={() => handleClick('contact')}><span className="b3">Contact</span></button>
                 </div>
             </div>
         </>
