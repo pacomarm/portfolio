@@ -114,27 +114,24 @@ body {
 		color: $ogreen;
 		border: 0.15208vw solid $ogreen;
 		&:hover {
-			opacity: 0.5;
-			background-color: $green;
-			color: white;
+			color: $lgreen;
+			border-color: $lgreen;
 		}
 	}
 	.b2 {
 		color: $lgrey;
 		border: 0.15208vw solid $lgrey;
 		&:hover {
-			opacity: 0.5;
-			background-color: $lgrey;
-			color: $nblack;
+			color: $white;
+			border-color: $white;
 		}
 	}
 	.b3 {
 		color: $red;
 		border: 0.15208vw solid $red;
 		&:hover {
-			opacity: 0.5;
-			background-color: $red;
-			color: white;
+			color: $lred;
+			border-color: $lred;
 		}
 	}
 }
