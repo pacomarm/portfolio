@@ -21,6 +21,11 @@ export const LandingPage = () => {
                     <h2 className="titles">Software, Engineer; Designer: Human.</h2>
                     <h2 className="titles2">Software, Engineer; Designer: Human-ish</h2>
                 </div>
+                <div className="rou">
+                    <button className="button"><span className="b1">Projects</span></button>
+                    <button className="button"><span className="b2">About</span></button>
+                    <button className="button"><span className="b3">Contact</span></button>
+                </div>
             </div>
         </>
     )

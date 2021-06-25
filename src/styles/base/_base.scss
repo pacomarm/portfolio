@@ -78,7 +78,6 @@ body {
 		.titles2 {
 			display: block;
 		}
-		transition: display 1.35s ease-in-out;
 	}
 }
 
@@ -86,4 +85,56 @@ body {
 	padding: 25px;
 	border-radius: 25px;
 	background-color: $lgold;
+}
+
+.rou {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5em;
+}
+
+.button {
+	padding: 0;
+	font-family: $appleFont;
+	font-size: 1.04167vw;
+	border-radius: 1.30208vw;
+	padding: 0.625vw 1.66667vw;
+	line-height: 1;
+	background-color: transparent;
+	border: none;
+	span {
+		font-family: $appleFont;
+		font-size: 1.04167vw;
+		border-radius: 1.30208vw;
+		padding: 0.625vw 1.66667vw;
+		background-color: transparent;
+	}
+	.b1 {
+		color: $ogreen;
+		border: 0.15208vw solid $ogreen;
+		&:hover {
+			opacity: 0.5;
+			background-color: $green;
+			color: white;
+		}
+	}
+	.b2 {
+		color: $lgrey;
+		border: 0.15208vw solid $lgrey;
+		&:hover {
+			opacity: 0.5;
+			background-color: $lgrey;
+			color: $nblack;
+		}
+	}
+	.b3 {
+		color: $red;
+		border: 0.15208vw solid $red;
+		&:hover {
+			opacity: 0.5;
+			background-color: $red;
+			color: white;
+		}
+	}
 }
