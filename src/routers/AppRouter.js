@@ -18,11 +18,11 @@ export const AppRouter = () => {
         <Router>
             <div>
                 <Switch>
-                    <Route exact path={`${Constants.baseURL}/home`} component={LandingPage}></Route>
-                    <Route exact path={`${Constants.baseURL}/about`} component={AboutPage}></Route>
-                    <Route exact path={`${Constants.baseURL}/contact`} component={ContactPage}></Route>
-                    <Route exact path={`${Constants.baseURL}/projects`} component={ProjectsPage}></Route>
-                    <Redirect to={`${Constants.baseURL}/home`}></Redirect>
+                    <Route exact path="/home" component={LandingPage}></Route>
+                    <Route exact path="/about" component={AboutPage}></Route>
+                    <Route exact path="/contact" component={ContactPage}></Route>
+                    <Route exact path="/projects" component={ProjectsPage}></Route>
+                    <Redirect to="/home"></Redirect>
                 </Switch>
             </div>
         </Router>
